@@ -1,5 +1,5 @@
 // Problem 3: Longest Substring Without Repeating Characters
-// Approach: Brute Force / Hash Set
+// Approach: Brute Force
 // Time Complexity: O(n^2)
 // Space Complexity: O(n)
 class Solution {
