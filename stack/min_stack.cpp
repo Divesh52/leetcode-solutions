@@ -1,0 +1,41 @@
+// Problem 155: Min Stack
+// Approach: Stack / Pair Tracking Minimum
+// Time Complexity: O(1) per operation
+// Space Complexity: O(n)  (for the stack)
+class MinStack {
+public:
+stack<pair<int,int>>st;
+    MinStack() {
+    }
+    
+    void push(int val) {
+     if(st.empty()) st.emplace(val,val);
+     else
+     {
+        st.emplace(val,min(val,st.top().second));
+     }   
+    }
+    
+    void pop() {
+        if(st.empty()) return;
+        st.pop();
+        
+    }
+    
+    int top() {
+        return st.top().first;
+    }
+    
+    int getMin() {
+        return st.top().second;
+    }
+};
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * MinStack* obj = new MinStack();
+ * obj->push(val);
+ * obj->pop();
+ * int param_3 = obj->top();
+ * int param_4 = obj->getMin();
+ */
