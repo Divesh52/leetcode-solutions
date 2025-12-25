@@ -5,7 +5,8 @@ My solutions to LeetCode problems in C++ and Python.
 - arrays/
 - strings/
 - linked-list/
-- stack-queue/
+- stack/
+- queue/
 - trees/
 - graphs/
 - dp/
